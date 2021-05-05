@@ -1,6 +1,7 @@
 from PIL import Image
 
-img = Image.open('VGG-FACE-KERAS/myDataSet/aliko.JPG')
+img_path = 'VGG-FACE-KERAS/myDataSet/aliko.JPG'
+img = Image.open(img_path)
 
 def reduce_red() :
     Matrix = ( 0.5,  0,  0,   0, 
@@ -28,3 +29,4 @@ def all_adjustments():
     increase_blue()
     adjust_green_blue()
     
+#all_adjustments()
